@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 html {
-  background: linear-gradient(to bottom, #FFFF, #F6C199);/*트게더 배경색 그라데이션*/
+  background: linear-gradient(to bottom, #F6C199, #F6C199);/*트게더 배경색 그라데이션(없앰)*/
   height: auto !important;
 }
 body {
@@ -114,6 +114,14 @@ header #header-bar .fa {
 #main .menu-wrapper .spacer {
   background: #F6C199;
   height: 0.15em;
+}
+
+/*커서*/
+*{
+cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0, auto !important;
+}
+#aw0{
+cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0, auto !important;
 }
 
 /* 게시글 관련부분 */
