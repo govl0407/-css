@@ -1,12 +1,19 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 html {
-  background: linear-gradient(to bottom, #F6C199, #F6C199);/*트게더 배경색 그라데이션(없앰)*/
+  background: linear-gradient(to bottom, #f6dcc8, #f6dcc8);/*트게더 배경색 그라데이션(없앰)*/
   height: auto !important;
 }
 body {
 letter-spacing: -0.05em !important;
   background: transparent;
   font-family: 'Nanum Gothic', sans-serif;/*글꼴*/
+}
+/*로고 변경*/
+header .row>div:nth-child(1)>a {
+  display: block;
+  height: 65px;
+  margin-bottom: -20px;
+  background: url('https://dandegimon.github.io/hyanggether/images/logo.png') no-repeat;
 }
 
 /* 전체 쉐도우 */
@@ -25,6 +32,13 @@ header #header-bar>.row {
   border-right: 4px solid #E4B382;
   border-left: 4px solid #E4B382;
   border-bottom: 4px solid #E4B382;
+}
+/*기본 로고 숨김*/
+header .row>div:nth-child(1)>a>img {
+  display: block;
+
+ filter: grayscale(100%);
+  opacity: 0;
 }
 
 /* 헤더 배너 */
