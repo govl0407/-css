@@ -9,11 +9,16 @@ letter-spacing: -0.05em !important;
   font-family: 'Nanum Gothic', sans-serif;/*글꼴*/
 }
 /*로고 변경*/
-header .row>div:nth-child(1)>a {
+
+header .row > div:nth-child(1) > a {
   display: block;
-  height: 65px;
-  margin-bottom: -20px;
+  width: 200px;
+  height: 50px;
   background: url('https://raw.githubusercontent.com/govl0407/-css/main/LOGO.png') no-repeat;
+  background-size: contain;
+}
+header .row > div:nth-child(1) > a img {
+   display: none;
 }
 
 /* 전체 쉐도우 */
@@ -27,38 +32,41 @@ header #header-bar>.row,
 /* 로고밑 NAV bar */
 
 header #header-bar>.row {
-  border-radius: 15px;
-  border-top: 4px solid #E4B382;
-  border-right: 4px solid #E4B382;
-  border-left: 4px solid #E4B382;
-  border-bottom: 4px solid #E4B382;
+  border-radius: 50px;
+  border-top: 4px solid #F5865D;
+  border-right: 8px solid #F5865D;
+  border-left: 4px solid #F5865D;
+  border-bottom: 8px solid #F5865D;
 }
 
 
-/* 헤더 배너 */
 
-
-header .row>div:nth-child(1)>a {
-  display: block;
-  width: 145px;
-  height: 50px;
-  background: url(https://raw.githubusercontent.com/govl0407/-css/main/LOGO.png) no-repeat;
-  background-size: auto 50px;
+/*프로필 사진 위치변경, 둥근테두리,크기변경*/
+#board-info {
+    overflow: visible;
 }
 
-header .row>div:nth-child(1)>a>img {
-  display: none;
+#board-info #board-info-profile-img{
 
-	filter: grayscale(100%);
-  opacity: 0.8;
+    float: left !important;
+    width:100px;
+    height:100px;
+    margin-right: 10px;
+    border-radius: 100px;
+    border: solid 3px #fdafab;
+
+
 }
 
+#board-info #viewers-area {
+    float: right;
+}
 
 /* 검색폼 보더 */
 
 header #right-search-form>input[type='text'] {
   border-radius: 15px;/*테두리 둥글*/
-  border: 3px solid #F6C199;/*검색창 색상*/
+    border: 3px solid #F5865D;/*검색창 색상*/
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
@@ -74,7 +82,7 @@ header #right-search-form>input[type='text'] {
 }
 
 .fa-square:before {
-  color: #F6C199;
+  color: #F5865D;
 }
 
 header #header-bar>.row,
@@ -92,7 +100,7 @@ header #header-bar>.row,
 /* 헤더 검색 버튼 */
 
 header #right-search-form>#right-search-btn {
-  color: #F6C199;
+  color: #F5865D;
 }
 
 /* 헤더 [광고]배경색 */
@@ -116,13 +124,13 @@ header #header-bar .fa {
 /* 좌측메뉴 숏컷링크 글씨 색상 */
 
 #main .menu-wrapper>a>em {
-  color: #F6C199;
+  color: #F5865D;
 }
 
 /* 좌측메뉴 메뉴사이의 공간 색상 */
 
 #main .menu-wrapper .spacer {
-  background: #F6C199;
+  background: #F5865D;
   height: 0.15em;
 }
 
@@ -135,13 +143,16 @@ cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0,
 }
 
 /* 게시글 관련부분 */
-
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
   width: 120px !important;
 }
 
 #article-list #article-list-category {
-  border-top: 2px solid #FF0000;
+  border-top: 2px solid #F5865D !important;
+  background: white;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   background: white;/*건의사항 잡담 등등 있는 바 배경색상*/
 }
 
@@ -150,15 +161,15 @@ cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0,
 }
 
 #article-list>.article-list-row>.item>.list-header>span {
-  background-color: #F6C199;
+  background-color: #F5865D;
 }
 
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
-  color: #F6C199;
+  color: #F5865D;
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: #F6C199;
+  color: #F5865D;
 }
 
 .pagination>.active>a,
@@ -167,20 +178,20 @@ cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0,
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-  background-color: #FF0000;
-  border-color: #FF0000;
+  background-color: #F5865D;
+  border-color: #F5865D;
 }
 
 .pagination>li>a:focus,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-  color: #FF0000;
+  color: #F5865D;
 }
 
 .pagination>li>a,
 .pagination>li>span {
-  color: #FF0000;
+  color: #F5865D;
 }
 
 #article-content-wrapper>.header {
@@ -189,7 +200,7 @@ cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0,
 
 #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
 #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-  color: #FF0000;
+  color: #000000;
 }
 
 #article-info>h2 {
@@ -209,7 +220,7 @@ cursor: url(https://github.com/govl0407/-css/blob/main/cursor.png?raw=true) 0 0,
 }
 
 a {
-  color: #FF0000;
+  color: #F5865D;
 }
 
 span.a-badge i.fa.fa-info-circle {
